@@ -4,7 +4,7 @@
 
 print("\nWelcome to the little lost bee minigame!.\nOh no! you are lost! Your mission is to find your hive!")
 
-tree_river = input("\nYou find yourself hungry and lost in the woods,\n in your surroundings you can see a big tree and a river, which way will you go?\n Tree or River: ")
+tree_river = input("\nYou find yourself hungry and lost in the woods,in your surroundings you can see a big tree and a river, which way will you go?\n Tree or River: ")
 low_tree_river = tree_river.lower()
 
 if low_tree_river == "tree":
@@ -108,9 +108,7 @@ elif low_tree_river == "river":
               """)
         print("\nThe human killed you, Game over")
     elif low_noise_sound == "ignore":
-        pollen_Y_N = input("\nNow you can see a bee on the ground, she's weak and need some pollen, you stil got some from the flower before\n give the pollen to her?\nYes / No: ")
-        low_pollen_Y_N = pollen_Y_N.lower()
-        print(r"""
+      print(r"""
                                   ...vvvv)))))).
        /~~\               ,,,c(((((((((((((((((/
       /~~c \.         .vv)))))))))))))))))))\``
@@ -124,9 +122,11 @@ elif low_tree_river == "river":
           //              'c'c       '\c7*X7~~~~
          ]/                 ~=Xm_       '~=(Gm_.
           """)
-        if pollen_Y_N == "no":
-            print("\nThe weak bee was a worker from your hive, but she died, now you dont know how to get back to the hive, because you didnt help her...")
-            print(r"""
+      pollen_Y_N = input("\nNow you can see a bee on the ground, she's weak and need some pollen, you stil got some from the flower before\n give the pollen to her?\nYes / No: ")
+      low_pollen_Y_N = pollen_Y_N.lower()
+      if pollen_Y_N == "no":
+          print("\nThe weak bee was a worker from your hive, but she died, now you dont know how to get back to the hive, because you didnt help her...")
+          print(r"""
               \     /
           \    X ^ X    /
             \ (     ) /
@@ -140,10 +140,10 @@ elif low_tree_river == "river":
                (%%%)
                  !)
                   """)
-            print("\nYou died... Game over!")
-        elif low_pollen_Y_N == "yes":
-            print("\nGood choice! the weak bee was a worker from your hive, you not just helped her, but now she took you back to the hive!")
-            print(r"""
+          print("\nYou died... Game over!")
+      elif low_pollen_Y_N == "yes":
+          print("\nGood choice! the weak bee was a worker from your hive, you not just helped her, but now she took you back to the hive!")
+          print(r"""
      ^^      .-=-=-=-.  ^^
  ^^        (`-=-=-=-=-`)         ^^
          (`-=-=-=-=-=-=-`)  ^^         ^^
@@ -158,5 +158,5 @@ elif low_tree_river == "river":
            (`-=-=-=-=-`)
             `-=-=-=-=-`
                   """)
-            print("\nYou found the way back to the hive! well done! you won! GGWP")
+          print("\nYou found the way back to the hive! well done! you won! GGWP")
 
