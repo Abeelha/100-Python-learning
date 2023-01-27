@@ -1,10 +1,10 @@
 # Theodoro Bertol Dev (Abeelha) #
 # || Day 3 of #100DaysOfCode || #
 
-height = input("enter your height in m: ")
-weight = input("enter your weight in kg: ")
+height = float(input("enter your height in m: "))
+weight = float(input("enter your weight in kg: "))
 
-bmi = round(weight / height ** 2)
+bmi = round(weight / height ** 2,1)
 
 if bmi < 18.5:
   print(f"Your BMI is {bmi}, you are underweight.")
