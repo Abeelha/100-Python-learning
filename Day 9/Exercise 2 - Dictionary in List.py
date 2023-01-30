@@ -1,5 +1,5 @@
 # Theodoro Bertol Dev (Abeelha) #
-# || Day 8 of #100DaysOfCode || #
+# || Day 9 of #100DaysOfCode || #
 
 travel_log = [
 {
