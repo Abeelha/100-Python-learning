@@ -45,6 +45,7 @@ def compare_followers(list_persons, guess):
 
 # TODO Rename this here and in `compare_followers`
 def cls_logo_score(arg0, score, arg2):
+    """ clears the screen and Returns Logo and score"""
     clear_screen()
     print(art.logo)
     print(f"{arg0}{score}")
