@@ -18,10 +18,7 @@ def clear_screen():
 selected_persons = set()
 def pick_random():
     """Picks 2 random dictionaries from game_data.data and put them into a list"""
-    persons = []   
-    for i in range(2):
-        persons.append(random.choice(game_data.data))
-    return persons 
+    return [random.choice(game_data.data) for _ in range(2)] 
 
 def compare_followers(list_persons, guess):
     """Compare if the guess of the player is valid, count scores and return boolean if user is right"""
@@ -30,23 +27,28 @@ def compare_followers(list_persons, guess):
     if (list_persons[0]['follower_count']) > (list_persons[1]['follower_count']) and guess == "A":
         score += 1
         list_persons[1] = random.choice(game_data.data)
-        clear_screen()
-        print(art.logo)
-        print(f"You're right! Current Score: {score}")
-        return True
+        return cls_logo_score(
+            "You're right! Current Score: ", score, True
+        )
     elif (list_persons[0]['follower_count']) < (list_persons[1]['follower_count']) and guess == "B":
         score += 1
         list_persons[0] = list_persons[1]
         list_persons[1] = random.choice(game_data.data)
-        clear_screen()
-        print(art.logo)
-        print(f"You're right! Current Score: {score}")
-        return True
+        return cls_logo_score(
+            "You're right! Current Score: ", score, True
+        )
     else:
-        clear_screen()
-        print(art.logo)
-        print(f"Sorry, That's wrong. Final Score: {score}")
-        return False
+        return cls_logo_score(
+            "Sorry, That's wrong. Final Score: ", score, False
+        )
+
+
+# TODO Rename this here and in `compare_followers`
+def cls_logo_score(arg0, score, arg2):
+    clear_screen()
+    print(art.logo)
+    print(f"{arg0}{score}")
+    return arg2
 
 def play_game():
     play = True
