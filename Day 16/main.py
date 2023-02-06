@@ -1,6 +1,9 @@
 # Theodoro Bertol Dev (Abeelha) #
 # || Day 16 of #100DaysOfCode || #
 
+
+# ----- Version 3.0 Coffee machine with OOP :) -----
+
 # import platform
 # import os
 import art
