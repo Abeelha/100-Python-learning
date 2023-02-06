@@ -48,7 +48,7 @@ def clear_screen():
         os.system("clear")
 
 
-#Version 2.0
+#Version 2.0, simplified code
 profit = 0
 
 def is_resource_sufficient(order_ingredients):
