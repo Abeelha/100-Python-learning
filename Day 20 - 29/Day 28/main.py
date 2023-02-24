@@ -1,3 +1,6 @@
+# Theodoro Bertol Dev (Abeelha) #
+# || Day 27 of #100DaysOfCode || #
+
 from tkinter import *
 import math
 # ---------------------------- CONSTANTS ------------------------------- #
