@@ -1,5 +1,5 @@
 # Theodoro Bertol Dev (Abeelha) #
-# || Day 27 of #100DaysOfCode || #
+# || Day 28 of #100DaysOfCode || #
 
 from tkinter import *
 import math
