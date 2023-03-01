@@ -120,8 +120,8 @@ password_entry = Entry(width=21)
 password_entry.grid(row=3, column=1)
 
 # ---------------------------- Buttons ------------------------------- #
-search_button = Button(text="Search", width=13, command=find_password)
-search_button.grid(row=1, column=2)
+# search_button = Button(text="Search", width=13, command=find_password)
+# search_button.grid(row=1, column=2)
 generate_password_button = Button(text="Generate Password", command=generate_password)
 generate_password_button.grid(row=3, column=2)
 add_button = Button(text="Add", width=36, command=save)
