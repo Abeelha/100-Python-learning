@@ -65,11 +65,3 @@ class QuizInterface:
         else:
             self.canvas.config(bg="red")
         self.window.after(1000, self.get_next_question)
-
-
-
-
-
-
-
-
