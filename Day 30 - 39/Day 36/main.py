@@ -1,3 +1,6 @@
+# Theodoro Bertol Dev (Abeelha) #
+# || Day 36 of #100DaysOfCode || #
+
 import requests
 from twilio.rest import Client
 
