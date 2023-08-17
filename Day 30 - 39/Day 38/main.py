@@ -13,15 +13,17 @@ API_KEY = os.getenv("day38_API_KEY")
 ENDPOINT_EXERCISE = "https://trackapi.nutritionix.com/v2/natural/exercise"
 ENDPOINT_SHEETY = os.getenv("day38_ENDPOINT_SHEETY")
 AUTH = os.getenv("day38_AUTH")
+
+#Variables of your phisical
 GENDER = "Male"
 WEIGHT_KG = 70
 HEIGHT_CM = 1.82
 AGE = 21
 
-print (API_KEY)
-print (ENDPOINT_EXERCISE)
-print (ENDPOINT_SHEETY)
-print (AUTH)
+# print (API_KEY)
+# print (ENDPOINT_EXERCISE)
+# print (ENDPOINT_SHEETY)
+# print (AUTH)
 
 
 # Get the current date and time
