@@ -5,11 +5,11 @@ import requests
 import datetime
 
 #Create account and get ur ID and APIKEY here: https://developer.nutritionix.com
-APP_ID = "f9f78bec"
-API_KEY = "9b736f8c0c82378953bd4764247737a8"
+APP_ID = "1234"
+API_KEY = "1234"
 ENDPOINT_EXERCISE = "https://trackapi.nutritionix.com/v2/natural/exercise"
-ENDPOINT_SHEETY = "https://api.sheety.co/7e1fc263972ddfa7d19da8424cfaca11/myWorkouts/workouts"
-AUTH = "Basic QWJlZWxoYTphYmFjYXRlNDMyMQ=="
+ENDPOINT_SHEETY = "UR ENDPOINT"
+AUTH = "Basic AUTH"
 GENDER = "Male"
 WEIGHT_KG = 70
 HEIGHT_CM = 1.82
