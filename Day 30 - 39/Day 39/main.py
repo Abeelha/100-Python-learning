@@ -1,6 +1,10 @@
 # Theodoro Bertol Dev (Abeelha) #
 # || Day 39 of #100DaysOfCode || #
 
+import os
+from dotenv import load_dotenv, dotenv_values
+load_dotenv()
+
 import requests
 from pprint import pprint
 

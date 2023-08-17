@@ -1,8 +1,13 @@
 # Theodoro Bertol Dev (Abeelha) #
 # || Day 39 of #100DaysOfCode || #
 
+import os
+from dotenv import load_dotenv, dotenv_values
+load_dotenv()
+
 from pprint import pprint
 import requests
+
 
 class DataManager:
     #This class is responsible for talking to the Google Sheet.

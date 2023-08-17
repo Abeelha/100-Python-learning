@@ -1,19 +1,28 @@
 # Theodoro Bertol Dev (Abeelha) #
 # || Day 38 of #100DaysOfCode || #
 
+import os
+from dotenv import load_dotenv, dotenv_values
+load_dotenv()
 import requests
 import datetime
 
 #Create account and get ur ID and APIKEY here: https://developer.nutritionix.com
-APP_ID = ""
-API_KEY = ""
+APP_ID = os.getenv("day38_APP_ID")
+API_KEY = os.getenv("day38_API_KEY")
 ENDPOINT_EXERCISE = "https://trackapi.nutritionix.com/v2/natural/exercise"
-ENDPOINT_SHEETY = "https://api.sheety.co/"
-AUTH = "Basic "
+ENDPOINT_SHEETY = os.getenv("day38_ENDPOINT_SHEETY")
+AUTH = os.getenv("day38_AUTH")
 GENDER = "Male"
 WEIGHT_KG = 70
 HEIGHT_CM = 1.82
 AGE = 21
+
+print (API_KEY)
+print (ENDPOINT_EXERCISE)
+print (ENDPOINT_SHEETY)
+print (AUTH)
+
 
 # Get the current date and time
 current_datetime = datetime.datetime.now()
