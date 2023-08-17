@@ -4,7 +4,6 @@
 class FlightData:
     #This class is responsible for structuring the flight data.
     SEARCH_ENDPOINT_KIWI = "https://api.tequila.kiwi.com/v2/search"
-    # APIKEY = "LCv4cFgakCKGG__yyFuI1AGCTCBXArhc"
     originBR = "SAO"
     destinationCA = "YTO"
     flight_data = {
