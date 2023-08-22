@@ -51,7 +51,7 @@ body_exercises = {
 #Test GET SHEETY
 # response = requests.get(url=ENDPOINT_SHEETY,headers=headers_sheets)
 
-response_exercise = requests.post(url=ENDPOINT_EXERCISE, json=body_exercises, headers=headers_exercise)
+response_exercise = requests.post(url=ENDPOINT_EXERCISE, json=body_exercises, headers=headers_exercise)  # type: ignore
 # print(response.text)
 
 # Response filter
@@ -68,7 +68,7 @@ for exercise in json_data["exercises"]:
         }
     }
 
-    response_sheety = requests.post(url=ENDPOINT_SHEETY, json=body_add_row_sheety)
+    response_sheety = requests.post(url=ENDPOINT_SHEETY, json=body_add_row_sheety)  # type: ignore
     print(response_sheety.text)
 
 # for exercise in json_data["exercises"]:
