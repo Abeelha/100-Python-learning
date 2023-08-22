@@ -22,7 +22,7 @@ class DataManager:
             if response_get.status_code == 200:
                 data = response_get.json()
                 self.destination_data = data["prices"]
-                pprint(data)
+                # pprint(data)
                 return self.destination_data
             else:
                 print("Request failed with status code:", response_get.status_code)
