@@ -11,13 +11,13 @@ from pprint import pprint
 #Imported files
 from data_manager import DataManager
 from notification_manager import NotificationManager
-from flight_data import FlightData
+# from flight_data import FlightData
 from flight_search import FlightSearch
 
 data_manager = DataManager()
+flight_search = FlightSearch()
 sheet_data = data_manager.get_destination_data()
-data_manager.get_destination_data()
-print(sheet_data)
+
 
 if sheet_data[0]["iataCode"] == "":
     from flight_search import FlightSearch
