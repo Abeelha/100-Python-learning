@@ -1,5 +1,6 @@
 # Theodoro Bertol Dev (Abeelha) #
 # || Day 39 of #100DaysOfCode || #
+#NOTE MY FREE API TRIAL HAS ENDED, UNFORTUNATELY I CANT TEST THE CODE </3 :( 
 
 import os
 import requests
@@ -25,38 +26,3 @@ class FlightData:
         self.destination_airport = destination_airport
         self.out_date = out_date
         self.return_date = return_date
-
-    # def flight_data(self, IATA_code):
-    #     # You can use the split() function to get the first part of the date from the API response.
-        
-    #     # Get the current date and time
-    #     current_date = datetime.now()
-    #     current_time = current_date.strftime("%d-%m-%Y")
-
-    #     # Add 6 intervals of 30 days
-    #     new_date_after_30_days = current_date + timedelta(days=30*6)
-    #     new_date_after_30_days = new_date_after_30_days.strftime("%d-%m-%Y")
-
-    #     # Add 6 months
-    #     new_date_after_6_months = current_date.replace(month=current_date.month + 6)
-    #     new_date_after_6_months = new_date_after_6_months.strftime("%d-%m-%Y")
-
-    #     print("Current Date:", current_date)
-    #     print("Date after 6 intervals of 30 days:", new_date_after_30_days)
-    #     print("Date after 6 months:", new_date_after_6_months)
-        
-    #     query = {
-    #         "fly_from": "SAO",
-    #         "location_types": "city",
-    #         "fly_to": IATA_code,
-    #         "date_from": current_time,
-    #         "date_to": new_date_after_30_days,
-    #     }
-        
-    #     response = requests.get(
-    #         url= f"{TEQUILA_ENDPOINT}/search",
-    #         headers = header_key, #type : ignore
-    #         params = query
-    #         )
-        
-    #     print(response.text)

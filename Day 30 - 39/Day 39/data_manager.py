@@ -1,5 +1,7 @@
 # Theodoro Bertol Dev (Abeelha) #
 # || Day 39 of #100DaysOfCode || #
+#NOTE MY FREE API TRIAL HAS ENDED, UNFORTUNATELY I CANT TEST THE CODE </3 :( 
+
     
 import os
 import requests
@@ -13,14 +15,15 @@ ENDPOINT_SHEETY = os.getenv("day39_ENDPOINT_SHEETY")
 # headers_sheets = {
 #     "Authorization": HEADER_AUTH_SHEETY,
 # }
+
 class DataManager:
     def __init__(self):
         self.destination_data = {}
 
     def get_destination_data(self):
         response_get = requests.get(url=ENDPOINT_SHEETY) # type: ignore
-        # pprint.pprint(data)
         data = response_get.json()
+        pprint.pprint(data) 
         self.destination_data = data["prices"]
         return self.destination_data
     
