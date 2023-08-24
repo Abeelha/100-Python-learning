@@ -19,8 +19,8 @@ class DataManager:
 
     def get_destination_data(self):
         response_get = requests.get(url=ENDPOINT_SHEETY) # type: ignore
-        data = response_get.json()
         # pprint.pprint(data)
+        data = response_get.json()
         self.destination_data = data["prices"]
         return self.destination_data
     
@@ -36,21 +36,4 @@ class DataManager:
                 url=f"{ENDPOINT_SHEETY}/{city['id']}",
                 json=new_data
             )
-            print(response.text)
-            
-    # def update_destination_codes(self):
-    #     if destination_data := self.get_destination_data():
-    #         for city in self.destination_data:
-    #             new_data = {
-    #                 "price": {
-    #                     "iataCode": city["iataCode"]
-    #                 }
-    #             }
-    #             response = requests.put(
-    #                 url = f"{ENDPOINT_SHEETY}/{city['id']}",
-    #                 json = new_data
-    #             )
-    #             print(f"{ENDPOINT_SHEETY}/{city['id']}")
-    #             print(response.text)
-    #     else:
-    #         print("No destination data to update.")
+            # print(response.text)
