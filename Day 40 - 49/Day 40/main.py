@@ -3,7 +3,7 @@
 
 import sheety
 
-print("Welcome to Abeelha Flight CLub. \n We find the best flight deals and email them to you.")
+print("Welcome to Abeelha Flight CLub. \nWe find the best flight deals and email them to you.")
 
 first_name = input("What is your First Name? ")
 last_name = input("What is your Last Name? ")
